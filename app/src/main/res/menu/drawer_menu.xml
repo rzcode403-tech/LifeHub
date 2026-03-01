@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <group android:checkableBehavior="single">
+        
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="@string/menu_weather" />
+            
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/menu_news" />
+            
+        <item
+            android:id="@+id/nav_currency"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="@string/menu_currency" />
+            
+        <item
+            android:id="@+id/nav_crypto"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="@string/menu_crypto" />
+            
+        <item
+            android:id="@+id/nav_translate"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:title="@string/menu_translate" />
+            
+        <item
+            android:id="@+id/nav_countries"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="@string/menu_countries" />
+            
+        <item
+            android:id="@+id/nav_nasa"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="@string/menu_nasa" />
+            
+        <item
+            android:id="@+id/nav_fun"
+            android:icon="@android:drawable/ic_menu_emoticons"
+            android:title="@string/menu_fun" />
+            
+    </group>
+    
+</menu>
