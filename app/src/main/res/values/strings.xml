@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">LifeHub</string>
+    
+    <!-- Menu Items -->
+    <string name="menu_weather">الطقس</string>
+    <string name="menu_news">الأخبار</string>
+    <string name="menu_currency">العملات</string>
+    <string name="menu_crypto">العملات الرقمية</string>
+    <string name="menu_translate">الترجمة</string>
+    <string name="menu_countries">الدول</string>
+    <string name="menu_nasa">الفضاء</string>
+    <string name="menu_fun">ترفيه</string>
+    
+    <!-- Common -->
+    <string name="loading">جاري التحميل...</string>
+    <string name="error">حدث خطأ</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="no_internet">لا يوجد اتصال بالإنترنت</string>
+    
+    <!-- Weather -->
+    <string name="weather_title">حالة الطقس</string>
+    <string name="enter_city">أدخل اسم المدينة</string>
+    <string name="search">بحث</string>
+    <string name="temperature">درجة الحرارة</string>
+    <string name="humidity">الرطوبة</string>
+    <string name="wind_speed">سرعة الرياح</string>
+    <string name="pressure">الضغط</string>
+    
+    <!-- News -->
+    <string name="news_title">أخبار عالمية</string>
+    <string name="read_more">اقرأ المزيد</string>
+    
+    <!-- Currency -->
+    <string name="currency_title">تحويل العملات</string>
+    <string name="amount">المبلغ</string>
+    <string name="from">من</string>
+    <string name="to">إلى</string>
+    <string name="convert">تحويل</string>
+    <string name="result">النتيجة</string>
+    
+    <!-- Crypto -->
+    <string name="crypto_title">العملات الرقمية</string>
+    <string name="price">السعر</string>
+    <string name="change_24h">التغير (24 ساعة)</string>
+    
+    <!-- Translate -->
+    <string name="translate_title">الترجمة</string>
+    <string name="enter_text">أدخل النص للترجمة</string>
+    <string name="translate">ترجم</string>
+    <string name="source_lang">اللغة المصدر</string>
+    <string name="target_lang">اللغة الهدف</string>
+    
+    <!-- Countries -->
+    <string name="countries_title">معلومات الدول</string>
+    <string name="capital">العاصمة</string>
+    <string name="population">السكان</string>
+    <string name="region">المنطقة</string>
+    <string name="currency">العملة</string>
+    
+    <!-- NASA -->
+    <string name="nasa_title">صورة الفلك اليوم</string>
+    <string name="apod_title">العنوان</string>
+    <string name="apod_date">التاريخ</string>
+    <string name="apod_explanation">الشرح</string>
+    
+    <!-- Fun -->
+    <string name="fun_title">ترفيه ومعرفة</string>
+    <string name="random_joke">نكتة عشوائية</string>
+    <string name="random_fact">حقيقة عشوائية</string>
+    <string name="random_quote">اقتباس ملهم</string>
+    <string name="new_joke">نكتة جديدة</string>
+    <string name="new_fact">حقيقة جديدة</string>
+    <string name="new_quote">اقتباس جديد</string>
+</resources>
