@@ -20,15 +20,23 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
 
-      # هذه الخطوة هامة جداً لحل خطأ "No such file" وإعطاء صلاحية التشغيل
+      # خطوة ذكية: البحث عن ملف gradlew وإعطاؤه صلاحية التنفيذ أينما كان
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: find . -name "gradlew" -exec chmod +x {} +
 
+      # تشغيل البناء من المجلد الذي يحتوي على ملف gradle
       - name: Build with Gradle
-        run: ./gradlew assembleRelease
+        run: |
+          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+          if [ -z "$GRADLEW_PATH" ]; then
+            echo "Error: gradlew not found in the repository!"
+            exit 1
+          fi
+          cd $(dirname "$GRADLEW_PATH")
+          ./gradlew assembleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: app/build/outputs/apk/release/*.apk
+          path: "**/build/outputs/apk/release/*.apk"
