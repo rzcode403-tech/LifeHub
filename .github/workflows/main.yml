@@ -1,0 +1,38 @@
+name: Build Android APK
+
+on:
+  push:
+    branches:
+      - master # سيتم البناء عند الدفع لفرع master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      # إذا كان تطبيقك Flutter، فك التفعيل عن الأسطر التالية:
+      # - name: Set up Flutter
+      #   uses: subosito/flutter-action@v2
+      #   with:
+      #     flutter-version: '3.x.x'
+      # - run: flutter pub get
+      # - run: flutter build apk --release
+
+      # إذا كان تطبيقك Android (Native) استخدم هذا الأمر:
+      - name: Build with Gradle
+        run: ./gradlew assembleRelease
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release
+          path: app/build/outputs/apk/release/*.apk
